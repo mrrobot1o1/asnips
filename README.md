@@ -1,4 +1,4 @@
-## GET All IPs of any comany using ASN
+## GET All IPs of any company using ASN
 <p align="left"> <a href="https://twitter.com/mrrobot1o1" target="blank"><img src="https://img.shields.io/twitter/follow/mrrobot1o1?logo=twitter&style=for-the-badge" alt="mrrobot1o1" /></a></p>
 
 First Go On [Mxtoolbox](https://mxtoolbox.com) and register then grab a API key from [here](https://mxtoolbox.com/user/api) \
