@@ -14,9 +14,9 @@ fi
 ## Usage:
 ```bash
 git clone https://github.com/mrrobot1o1/asnips.git
-cd asnapis
-chmod +x asnapis
-./asnapis -d tesla.com
-./asnapis -m AS394161
+cd asnips
+chmod +x asnips
+./asnips -d tesla.com
+./asnips -m AS394161
 ```
 ![tool](img/help-menu.png)
