@@ -32,7 +32,7 @@ do
             domain="$2"
             IP=$(host $domain | sed -n '1p' | awk '{print $NF}')
             ASN=$(curl -s http://ipinfo.io/$IP | jq .org | tr -d \" | awk '{print $1}')
-            curl -s "https://api.mxtoolbox.com/api/v1/Lookup/ASN/?argument=$ASN&Authorization=$MX_API" | jq '.Information[] | ."CIDR Range"' |tr -d \"
+            curl -s "https://api.mxtoolbox.com/api/v1/Lookup/ASN/?argument=$ASN&Authorization=$MX_API" | jq -r '.Information[] | ."CIDR Range"'
           fi
           shift 2
           ;;
@@ -41,7 +41,7 @@ do
             display_help
             else
             ASN="$2"
-            curl -s "https://api.mxtoolbox.com/api/v1/Lookup/ASN/?argument=$ASN&Authorization=$MX_API" | jq '.Information[] | ."CIDR Range"' |tr -d \"
+            curl -s "https://api.mxtoolbox.com/api/v1/Lookup/ASN/?argument=$ASN&Authorization=$MX_API" | jq -r '.Information[] | ."CIDR Range"'
           fi
           shift 2
           ;;
